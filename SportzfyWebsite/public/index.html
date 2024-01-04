@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width"> <!-- do not remove -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Sportzfy Turf</title>
+</head>
+
+<body>
+
+    <div id="fullscreen_viewer">
+        <img>
+    </div>
+    
+    <div class="ticker-container">
+        <div class="ticker-wrapper">
+            <span class="ticker-transition"><span class="ticker-holder"></span><span class="ticker-duplicate" style="display:none"></span></span>
+        </div>
+    </div>
+    
+    <div id="img_loader" style="display:none">
+    </div>
+
+    <header>
+        <a href="/">
+            <img id="logo" src="Default/Logo.png" alt="Logo" />
+        </a>
+
+        <span id="top_info">
+            Call:&nbsp;
+            <div style="display: inline-table;">
+                <a href="tel:+917880087825">+917880087825</a> /<br>
+                <a href="tel:+917880087826">+917880087826</a>
+            </div>
+        </span>
+    </header>
+
+    <nav class="page__menu menu">
+        <ul class="menu__list r-list">
+            <li class="menu__group"><a href="/About" class="menu__link r-link text-underlined">About Us</a></li>
+            <li class="menu__group"><a href="https://photos.app.goo.gl/K6nCXhCaVZtvPPYD7" target="_blank" class="menu__link r-link text-underlined">Gallery</a></li>
+            <li class="menu__group"><a id="terms" href="/terms" class="menu__link r-link text-underlined">Terms &<br>Conditions</a></li>
+        </ul>
+    </nav>
+
+    <div id="welcome">
+        <div id="welcome_text">
+            <i>
+                Come & enjoy a match of
+                <span id="sport_title">Cricket</span>
+            </i>
+        </div>
+
+    </div>
+
+    <div id="latest">
+        <h1 id="latest_label">
+            <div></div>
+        </h1>
+        
+        <button class="prev_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+        <button class="next_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+
+        <div class="images"></div>
+    </div>
+
+    <div id="latest_indicators">
+    </div>
+    
+    <div id="content">
+        <div id="turf" class="info_wrapper">
+            <div class="images">
+
+                <div class="main_back">
+
+                    <img class="fade_pic" style="opacity:0;">
+                    <img class="main_pic" style="opacity:1;">
+
+                    <button class="prev_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+                    <button class="next_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+
+                </div>
+
+                <div class="showcase" style="display:none"></div>
+
+
+            </div>
+            <div class="text">
+                <h1 style="margin-bottom:2.5rem" class="colored_heading">About Our Turf</h1>
+
+                <ul>
+                    <li>7000 sq ft playing field</li>
+                    <li>Open 24x7</li>
+                    <li>Available for Cricket, Football, Volleyball & More</li>
+                    <li>Complimentary sports equipment provided</li>
+                    <li>Uniquely located turf, In midst of city yet isolated</li>
+                    <li>Cancellation/Postpone policy in case of bad weather <sup>*</sup></li>
+                </ul>
+
+                <!-- Welcome to a 7000 sq ft lush green synthetic turf
+                and enjoy multiple sports like cricket, football,
+                volleyball and many more.
+                <br>
+                <br>
+                Indulge in sports 24 x 7, in this Uniquely located turf
+                in midst of city area but still a isolated place
+                where no one hinders for relishing in sports Day & Night.
+                <br>
+                <br>
+                We also provide complimentary sports equipment to enhance your
+                gameplay experience. -->
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="lawn" class="info_wrapper">
+            <div class="text" style="margin-top:1rem">
+                <h1 style="margin-bottom:2.5rem;color: black;">Lawn & Dugout</h1>
+
+                <ul>
+                    <li>Open for kitty parties, Birthdays & other occasions</li>
+                    <li>Peaceful & Tranquil ambience</li>
+                    <li>A cafe to serve your appetite for delicacies</li>
+
+                </ul>
+
+            </div>
+            <div class="images">
+
+                <div class="main_back">
+
+                    <img class="fade_pic" style="opacity:0;">
+                    <img class="main_pic" style="opacity:1;">
+
+                    <button class="prev_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+                    <button class="next_btn control_btn disabled" tabindex="-1">&nbsp;</button>
+
+                </div>
+
+                <div class="showcase" style="display:none"></div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="bottom_wrapper">
+            <div id="location">
+                <h1>We're located at</h1>
+                562/3, RRCAT Road, Rangwasa Rd, Rau, Indore, Madhya Pradesh 453331
+                <br>
+                <br>
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.8458795247586!2d75.80371390197965!3d22.654144714524207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962ffb477958801%3A0x464d43546dd21f3a!2sSportzfy%20Turf!5e0!3m2!1sen!2sin!4v1688929430281!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+            <div id="contact">
+                <h1>Book now</h1>
+                <div id="inner_wrapper">
+                    <b class="contact_item">
+                        <span class="fa fa-phone"></span>
+                        Mobile
+                    </b>
+                        <span class="mobile_link">
+                            <a href="tel:+917880087825" style="color:inherit">+917880087825</a> /
+                            <br>
+                            <a href="tel:+917880087826" style="color:inherit">+917880087826</a>
+                        </span>
+                    <br>
+                    <br>
+
+                    <b class="contact_item">
+                        <span class="fa fa-envelope"></span>
+                        Email
+                    </b>
+                        <a style="color:inherit" href="mailto:sportzfyturf@gmail.com">sportzfyturf@gmail.com</a>
+
+                    <br>
+                    <br>
+
+
+                    <b class="contact_item">
+                        <span class="fa fa-whatsapp"></span>
+                        WhatsApp
+                    </b>
+                        <span class="mobile_link">
+                            <a href="https://wa.me/917880087825?text=Hello!%0AI%20would%20like%20know%20more%20about%20your%20Turf" style="color:inherit">+917880087825</a> /
+                            <br>
+                            <a href="https://wa.me/917880087826?text=Hello!%0AI%20would%20like%20know%20more%20about%20your%20Turf" style="color:inherit">+917880087826</a>
+                        </span>
+                    <br>
+                    <br>
+
+                    <b class="contact_item">
+                        <span class="fa fa-instagram"></span>
+                        Instagram
+                    </b>
+                    <a style="color:inherit" href="https://www.instagram.com/SportzfyTurfIndore/" target="_blank">SportzfyTurfIndore</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer_items" style="display:flex;justify-content:space-evenly;width:100%;">
+            <span><a href="/About">About us</a></span>
+            <span><a href="https://photos.app.goo.gl/K6nCXhCaVZtvPPYD7" target="_blank">Gallery</a></span>
+            <span  style="margin-top:-0.5rem">
+                <a href="/terms">
+                    <span style="margin-left:-1rem"><sup>*</sup> Terms</span> &amp;
+                    <br>Conditions
+                </a>
+            </span>
+
+        </div>
+        <hr style="margin:0 3rem 2rem 3rem;border: 0;border-top: 1px solid #595959;">
+        <div style="font-size:0.7rem;width:100%;text-align:center;">Sportzfy 2023 © All Rights Reserved</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYHK5P10NP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SYHK5P10NP');
+    </script>
+</body>
+
+</html>
